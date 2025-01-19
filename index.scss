@@ -4,12 +4,13 @@ body {
     line-height: 12px;
 
     nav {
-        
+        display: block;
         &.navbar-container {
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             padding: 12px 100px;
+            font-weight: 700px;
             
         }
         div {
@@ -32,15 +33,26 @@ body {
                 flex-direction: row;
                 justify-content: space-between;
                 margin:auto;
+                padding: 18px;
+                font-weight: 800;
+                li {
+                    &#dropdown {
+                        display: none;
+                    }
+                }
                 span {
                     &.dropdown-icons {
-                        height: 10px;
+                        display: block;
+                        float: inline-end;
+                        padding: 8px;
+                        font-size: 30px;
                     }
                 }
             }
             &.nav-buttons {  
                 display: block;
                 margin:auto;
+                padding-bottom: 12px;
                 button{
                     padding: 6px;
                     background-color:rgba(18, 1, 1, 0.943);
@@ -63,3 +75,26 @@ body {
 
 }
 
+@media(max-width:640px){
+    body {
+        nav{
+            &.navbar-container {
+                flex-direction: column;
+                
+                div{
+                    &.navbar-item:not(:first-child){
+                        display: none;
+                    }
+                    &.nav-links {
+                        li{
+                            &#dropdown {
+                                display:block;
+                                float: right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
