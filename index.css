@@ -3,31 +3,35 @@ body {
   padding: 0;
   line-height: 12px;
 }
-body nav {
+
+nav {
   display: block;
 }
-body nav.navbar-container {
+nav.navbar-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding: 12px 100px;
   font-weight: 700px;
 }
-body nav div.navbar-item {
+nav div.navbar-item {
   color: #fff;
 }
-body nav div li {
+nav div li {
   list-style: none;
   padding: 12px;
 }
-body nav div li a {
+nav div li a {
   text-decoration: none;
   color: #fff;
 }
-body nav div.nav-header {
+nav div li#dropdown {
+  display: none;
+}
+nav div.nav-header {
   padding: 12px 50px;
 }
-body nav div.nav-links {
+nav div.nav-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -35,21 +39,18 @@ body nav div.nav-links {
   padding: 18px;
   font-weight: 800;
 }
-body nav div.nav-links li#dropdown {
-  display: none;
-}
-body nav div.nav-links span.dropdown-icons {
+nav div.nav-links span.dropdown-icons {
   display: block;
   float: inline-end;
   padding: 8px;
   font-size: 30px;
 }
-body nav div.nav-buttons {
+nav div.nav-buttons {
   display: block;
   margin: auto;
   padding-bottom: 12px;
 }
-body nav div.nav-buttons button {
+nav div.nav-buttons button {
   padding: 6px;
   background-color: rgba(18, 1, 1, 0.943);
   color: #fff;
@@ -57,24 +58,27 @@ body nav div.nav-buttons button {
   border: 0.5px solid black;
   border-radius: 12px;
 }
-body nav div.nav-buttons button:nth-child(2) {
+nav div.nav-buttons button:nth-child(2) {
   color: black;
   background-color: #fff;
   padding: 10px;
   border-radius: 15px;
 }
 
-@media (max-width: 640px) {
-  body nav.navbar-container {
-    flex-direction: column;
-  }
-  body nav.navbar-container div.navbar-item:not(:first-child) {
-    display: none;
-  }
-  body nav.navbar-container div.nav-links li#dropdown {
-    display: block;
-    float: right;
-  }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: #fff;
+}
+main header {
+  text-align: center;
+  font-size: 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main button {
+  margin: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
