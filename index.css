@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 12px;
+}
+body nav.navbar-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 12px 100px;
+}
+body nav div.navbar-item {
+  color: #fff;
+}
+body nav div li {
+  list-style: none;
+  padding: 12px;
+}
+body nav div li a {
+  text-decoration: none;
+  color: #fff;
+}
+body nav div.nav-header {
+  padding: 12px 50px;
+}
+body nav div.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+body nav div.nav-links span.dropdown-icons {
+  height: 10px;
+}
+body nav div.nav-buttons {
+  display: block;
+  margin: auto;
+}
+body nav div.nav-buttons button {
+  padding: 6px;
+  background-color: rgba(18, 1, 1, 0.943);
+  color: #fff;
+  text-align: center;
+  border: 0.5px solid black;
+  border-radius: 12px;
+}
+body nav div.nav-buttons button:nth-child(2) {
+  color: black;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=index.css.map */
