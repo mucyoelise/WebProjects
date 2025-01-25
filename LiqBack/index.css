@@ -66,6 +66,7 @@ nav div.nav-buttons button:nth-child(2) {
 }
 
 main {
+  margin-top: 10em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
