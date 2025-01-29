@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="out/index.css">
+    <link href="google-icons/node_modules/material-symbols/index.css" rel="stylesheet">
+</head>
+<body>
+    <form action="#">
+        <div class="form-data"> 
+            <label for="username">User Name </label>
+            <input type="text" placeholder="user_name*" id="username" required>
+            <span class="material-symbols-outlined" id="checked">check_circle</span>
+            <span class="material-symbols-outlined" id="error">error</span>
+            
+            <small>Error message!</small>
+        </div>
+
+        <div class="form-data">
+            <label for="email">Email </label>
+            <input type="email" placeholder="email*" id="email" required>
+            <span class="material-symbols-outlined" id="checked">check_circle</span>
+            <span class="material-symbols-outlined" id="error">error</span>
+            <small>Error message!</small>
+        </div>
+
+        <div class="form-data">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password*" id="password" required>
+            <span class="material-symbols-outlined" id="checked">check_circle</span>
+            <span class="material-symbols-outlined" id="error">error</span>
+            <small>Error message!</small>
+        </div>
+
+        <div class="form-data">
+            <label for="rpassword">Re-type password</label>
+            <input type="password" placeholder="Re-type your password*" id="rpassword" required>
+            <span class="material-symbols-outlined" id="checked">check_circle</span>
+            <span class="material-symbols-outlined" id="error">error</span>
+            <small>Error message!</small>
+        </div>
+        <input type="submit" value="Send">
+        
+    </form>
+    <style>
+        .material-symbols-outlined {
+            color: blue;
+        }
+    </style>
+</body>
+</html>
