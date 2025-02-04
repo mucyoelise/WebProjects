@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <main>
+    <form class="login-form">
+        <header>lOGIN FORM</header>
+        <input type="email" name="email" placeholder="Enter your email" id="login-email" required>
+        <small>error_message</small>
+        <input type="password" name="password" placeholder="Enter your password" id="login-password" required>
+        <small>error_message</small>
+        <input type="submit" value="Login">
+    </form>
+    <form class="signin-form">
+        <header>CREATE ACCOUNT</header>
+        <input type="text" id="fname" class="fname" placeholder="Enter your first name *" required>
+        <small>error_message</small>
+        <input type="text" id="sname" class="sname" placeholder="Enter your second name">
+        <small>error_message</small>
+        <input type="tel" id="user-tel" class="user-tel" placeholder="Enter your phone number">
+        <small>error_message</small>
+        <input type="email" class="useremail" id="useremail" placeholder="Enter your email *" required>
+        <small>error_message</small>
+        <input type="password" class="userpassword" id="userpassword" placeholder="Enter your password *" required>
+        <small>error_message</small>
+        <input type="password" class="userpassword" id="check-password" placeholder="Re-enter your password *" required>
+        <small>error_message</small>
+        <input type="submit" value="Sign in">
+    </form>
+    <div class="form-hidder">
+        <button class="form-hidder-button" onclick="form_hidder()">Log-in</button>
+        <button class="form-hidder-button" onclick="form_hidder_left()">Sign-in</button>
+        
+    </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
