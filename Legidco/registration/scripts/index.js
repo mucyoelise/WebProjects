@@ -1,11 +1,11 @@
-let button = document.querySelector(".form-hidder-button");
+const container = document.querySelector(".container");
+const registerBtn = document.querySelector(".register-btn");
+const loginBtn = document.querySelector(".login-btn");
 
-function form_hidder () {
-    button.parentElement.className= "form-hidder";
-    return 0;
-}
+registerBtn.addEventListener("click", ()=>{
+    container.classList.add("active");
+});
 
-function form_hidder_left() {
-    button.parentElement.className="form-hidder-right";
-    return 0;
-}
+loginBtn.addEventListener("click", ()=>{
+    container.classList.remove("active");
+});
